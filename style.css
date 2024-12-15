@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2980b9; /* Bright Blue */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #34495e; /* Dark Grayish Blue */
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #1abc9c; /* Light Green */
+}
+
+nav a:active {
+    background-color: #16a085; /* Slightly darker green */
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+}
+
+.article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.article h2, .article h3 {
+    color: #2980b9; /* Bright Blue */
+}
+
+.article ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.article ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 40px;
+}
+
+/* Tech News */
+.tech-news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tech-news li {
+    background-color: #ecf0f1; /* Light Gray */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.tech-news li:hover {
+    background-color: #bdc3c7; /* Slightly darker gray */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Dark Grayish Blue */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
